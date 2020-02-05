@@ -1,5 +1,4 @@
 chrome.storage.sync.get(['users'], function (result) {
-  console.log(result)
   if (result.users instanceof Array) {
     Array
       .from(document.querySelectorAll('article .username, article span[property="schema:name"]'))
