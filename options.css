@@ -1,0 +1,81 @@
+.hup-blog-filter *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.hup-blog-filter,
+.hup-blog-filter input,
+.hup-blog-filter button {
+  color: #495057;
+  font-size: 16px;
+}
+
+.hup-blog-filter h1 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hup-blog-filter form label {
+  padding-left: 0;
+}
+
+.hup-blog-filter form input {
+  margin: 10px 0;
+}
+
+.hup-blog-filter label {
+  display: block;
+  font-weight: bold;
+}
+
+.hup-blog-filter input {
+  margin: 10px 0;
+  border: 1px solid #ced4da;
+  padding: 6px 12px;
+}
+
+.hup-blog-filter ul {
+  padding-left: 0;
+}
+
+.hup-blog-filter li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.hup-blog-filter li:hover {
+  background: #ced4da4f;
+}
+
+.hup-blog-filter li:nth-of-type(even) {
+  background: #ced4da42;
+}
+
+.hup-blog-filter button {
+  display: block;
+  background: #dc3545;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+  padding: 6px 12px;
+}
+
+.hup-blog-filter .user-list button:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.hup-blog-filter .user-form button {
+  margin-bottom: 25px;
+  background: #28a745;
+}
+
+.hup-blog-filter .user-form button:hover {
+  background: #28a745;
+  color: white;
+}
