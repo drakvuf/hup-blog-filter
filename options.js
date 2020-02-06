@@ -36,8 +36,10 @@ function saveUser (event) {
   const newUser = userInput.value
 
   chrome.storage.sync.get(['users'], function (result) {
+    const oldUsers = result.users instanceof Array ? result.users : []
+
     chrome.storage.sync.set({
-      users: [...result.users, newUser]
+      users: [...oldUsers, newUser]
     }, function () {
       userInput.value = ''
       listUsers()
