@@ -34,17 +34,19 @@ function saveUser (event) {
   event.preventDefault()
 
   const newUser = userInput.value
+  
+  if (newUser !== '') {
+    chrome.storage.sync.get(['users'], function (result) {
+      const oldUsers = result.users instanceof Array ? result.users : []
 
-  chrome.storage.sync.get(['users'], function (result) {
-    const oldUsers = result.users instanceof Array ? result.users : []
-
-    chrome.storage.sync.set({
-      users: [...oldUsers, newUser]
-    }, function () {
-      userInput.value = ''
-      listUsers()
+      chrome.storage.sync.set({
+        users: [...oldUsers, newUser]
+      }, function () {
+        userInput.value = ''
+        listUsers()
+      })
     })
-  })
+  }
 }
 
 function deleteUser (event) {
