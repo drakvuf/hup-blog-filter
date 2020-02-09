@@ -13,7 +13,7 @@ function createDeleteButtonElement (parent) {
 
 function createListElement (user) {
   const newListItem = document.createElement('li')
-  
+
   newListItem.textContent = user
   createDeleteButtonElement(newListItem)
   userListElement.appendChild(newListItem)
@@ -34,9 +34,9 @@ function saveUser (event) {
   event.preventDefault()
 
   const newUser = userInput.value
-  
+
   userInput.value = ''
-  
+
   if (newUser !== '' && /\S/.test(newUser)) {
     chrome.storage.sync.get(['users'], function (result) {
       const oldUsers = result.users instanceof Array ? result.users : []

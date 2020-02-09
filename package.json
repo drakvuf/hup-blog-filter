@@ -1,0 +1,24 @@
+{
+  "name": "hup-blog-filter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hup-blog-filter.js",
+  "dependencies": {
+    "standard": "^14.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drakvuf/hup-blog-filter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drakvuf/hup-blog-filter/issues"
+  },
+  "homepage": "https://github.com/drakvuf/hup-blog-filter#readme"
+}
